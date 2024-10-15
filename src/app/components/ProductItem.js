@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-function ProductItem({ name, image, price }) {
+function ProductItem({ id, name, image, price }) {
   return (
-    <div key={name} className="coffee-item">
+    <div>
       <p>{name}</p>
       <Image src={image} className="w-[200px] h-[250px]" alt="coffe_pic" />
       <p>{price}</p>
