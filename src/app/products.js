@@ -1,5 +1,6 @@
 import Americano from "./americano.jpg";
 import Latte from "./latte.jpg";
+import TurkishCoffee from "./turkishCoffee.jpeg";
 
 const products = [
   {
@@ -9,10 +10,16 @@ const products = [
     image: Americano,
   },
   {
-    id: 1,
+    id: 2,
     name: "Iced Latte",
     price: "1.5 KD",
     image: Latte,
+  },
+  {
+    id: 3,
+    name: "Turkish Coffee",
+    price: "1.75 KD",
+    image: TurkishCoffee,
   },
 ];
 

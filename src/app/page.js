@@ -6,7 +6,7 @@ import products from "./products";
 
 export default function Home() {
   const coffeeList = products.map((coffee) => (
-    <div key={coffeeShopImg.id} className="coffee-item">
+    <div key={coffee.id} className="coffee-item">
       <p>{coffee.name}</p>
       <Image src={coffee.image} className="w-[200px] h-[250px]" />
       <p>{coffee.price}</p>
@@ -28,7 +28,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="coffee-list2 flex justify-center items-center text-center gap-4">
+      <div className="coffee-list flex justify-center items-center text-center gap-4">
         {coffeeList}
       </div>
     </>
