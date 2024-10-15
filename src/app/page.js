@@ -3,15 +3,9 @@ import coffeeShopImg from "./coffeeShopImg.jpg";
 import americano from "./americano.jpg";
 import latte from "./latte.jpg";
 import products from "./products";
+import ProductItem from "./components/ProductItem";
 
 export default function Home() {
-  const coffeeList = products.map((coffee) => (
-    <div key={coffee.id} className="coffee-item">
-      <p>{coffee.name}</p>
-      <Image src={coffee.image} className="w-[200px] h-[250px]" />
-      <p>{coffee.price}</p>
-    </div>
-  ));
   return (
     <>
       <div className="grid items-center justify-items-center ">
@@ -27,10 +21,7 @@ export default function Home() {
           <Image src={coffeeShopImg} />
         </div>
       </div>
-
-      <div className="coffee-list flex justify-center items-center text-center gap-4">
-        {coffeeList}
-      </div>
+      <ProductItem />
     </>
   );
 }
