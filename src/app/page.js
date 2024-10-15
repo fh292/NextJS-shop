@@ -1,9 +1,6 @@
 import Image from "next/image";
 import coffeeShopImg from "./coffeeShopImg.jpg";
-import americano from "./americano.jpg";
-import latte from "./latte.jpg";
-import products from "./products";
-import ProductItem from "./components/ProductItem";
+import ProductList from "./components/ProductList";
 
 export default function Home() {
   return (
@@ -21,7 +18,7 @@ export default function Home() {
           <Image src={coffeeShopImg} />
         </div>
       </div>
-      <ProductItem />
+      <ProductList />
     </>
   );
 }

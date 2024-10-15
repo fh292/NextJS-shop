@@ -1,7 +1,6 @@
 import Americano from "./americano.jpg";
 import Latte from "./latte.jpg";
 import TurkishCoffee from "./turkishCoffee.jpeg";
-import ProductItem from "./components/ProductItem";
 
 const products = [
   {
